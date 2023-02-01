@@ -8,6 +8,7 @@ function exportExcel(data, workSheetColumnNames, workSheetName, filePath) {
         ... data
     ];
     const workSheet = xlsx.utils.aoa_to_sheet(workSheetData);
+    workSheet['!cols'] = [{wch: 25}, {wch: 25}, {wch: 17}, {wch: 18}, {wch: 18}, {wch: 12}];
     xlsx.utils.book_append_sheet(workBook, workSheet, workSheetName);
     xlsx.writeFile(workBook, path.resolve(filePath));
 }
