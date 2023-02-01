@@ -5,9 +5,7 @@ import {
   } from "./poit-api.js";
 
 const konkurs_data = [];
-const konkurs_posts = [];
 const skuldsaneringar_data = [];
-const skuldsaneringar_posts = [];
 
 export async function getKonkurserPosts(){
     try {
